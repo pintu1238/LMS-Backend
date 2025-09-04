@@ -3,10 +3,7 @@ import './globals.css';
 import '../../public/sass/base/helper.scss';
 import '../../public/sass/base/reset.scss';
 
-import Footer from './components/footer';
-
 import { Geist } from 'next/font/google';
-import Header from './components/header';
 
 const geistSans = Geist({
   subsets: ['latin'],
@@ -22,9 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={geistSans.className}>
-        <Header />
         {children}
-        <Footer />
       </body>
     </html>
   );
